@@ -1,0 +1,27 @@
+.avs {
+
+    margin-top: 100px;
+    height:50px;
+    background-color: #999999;
+}
+
+.avs > ul > li{
+    list-style-type: none;
+    float: left;
+    padding: 15px 15px 15px 15px;
+
+    cursor: pointer;
+    background-color: #9acfea;
+    border: 3px solid black;
+}
+
+.avs > ul {
+    width: 600px; /* укажи свою ширину*/
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.avs > ul > li:hover{
+    /*background-color: #9acfea;*/
+}

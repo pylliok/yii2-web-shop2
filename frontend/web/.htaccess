@@ -1,0 +1,10 @@
+#включаем
+RewriteEngine On
+
+#запрашиваемый файл не является файлом
+RewriteCond %{REQUEST_FILENAME} !-f
+#запрашиваемый файл не является директорией
+RewriteCond %{REQUEST_FILENAME} !-d
+#то перенаправляем запрос на web/index.php ( . - Это запрос)
+RewriteRule . /index.php
+

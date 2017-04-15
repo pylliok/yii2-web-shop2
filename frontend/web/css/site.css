@@ -1,0 +1,273 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+
+    }
+}
+
+/*
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+*/
+
+/*
+.login .has-error .form-control {
+  border-color: yellow;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		  text-color: yellow;
+
+}
+*/
+
+
+/********************************************************************************************************//
+.login input{
+    height:90px;
+    font: 54px solid sans-serif;
+}
+
+/*     has-error    */
+.news .has-error .help-block , /*Подсказка об ошибках при вводе данных в форму*/
+.news .has-error .control-label { /*Выделение Label над полем при ошибке ввода*/
+    color: indianred;
+}
+
+.news .has-error .form-control { /*Подсвечивается бордер при ошибке в воде данных*/
+    border-color: indianred;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.news .has-error .form-control:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #843534;  /*Размытие цвета рамки при нажатии на неё*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #843534;
+}
+
+/*       .has-success            */
+
+.news .has-success .help-block , /*Подсказка об ошибках при вводе данных в форму*/
+.news .has-success .control-label { /*Выделение Label над полем при ошибке ввода*/
+    color: limegreen;
+}
+
+.news .has-success .form-control { /*Подсвечивается бордер при ошибке в воде данных*/
+    border-color: limegreen;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.news .has-success .form-control:focus {
+    border-color: #81CEA0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px limegreen;  /*Размытие цвета рамки при нажатии на неё*/
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px limegreen;
+}
+
+
+
+@media (min-width: 1200px) {  /*      lg  */
+    .news .help-block {
+        margin-left:200px;
+    }
+
+
+    .news .control-label{
+        margin-left:-400px;
+        margin-top:30px;
+    }
+
+    .news .form-control {
+        width:250px;
+        margin-left:200px;
+        float:left;
+        margin-top:15px;
+    }
+
+.news .btn{
+    margin-left:150px;
+    padding:5px 100px 5px 100px;
+}
+.news img{  /*управление картинкой валидации*/
+     float:left;
+    margin-left:40px;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) { /*  md   */
+    .news .help-block {
+        margin-left:-180px;
+    }
+
+
+    .news .control-label{
+        margin-left:-820px;
+        margin-top:30px;
+    }
+
+    .news .form-control {
+        width:700px;
+        margin-left:-180px;
+        float:left;
+        margin-top:22px;
+    }
+
+}
+
+
+@media (max-width: 992px) and (min-width: 768px) { /*  sm */
+    .news .help-block {
+
+        margin:0px 0px 0px 200px;
+        padding: 0;
+    }
+
+
+    .news .control-label{
+        margin-left:-610px;
+        margin-top: 34px;
+    }
+
+    .news .form-control {
+        width:500px;
+        margin-left:200px;
+        float:left;
+        margin-top:32px;
+
+    }
+
+    .news {
+        padding-top:50px;
+    }
+
+}
+
+
+@media (max-width: 767px){  /* xm */
+
+}
+
+
+
+.has-error .input-group-addon { /*????????????????*/
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+.has-error .form-control-feedback { /* ?????????????????7*/
+    color: #a94442;
+}
+
+
